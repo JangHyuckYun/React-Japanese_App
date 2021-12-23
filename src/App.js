@@ -13,7 +13,7 @@ const App = () => {
         const nextTheme = theme === lightTheme ? darkTheme : lightTheme;
         setTheme(nextTheme);
     }
-
+    console.log(process.env.PUBLIC_URL)
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
