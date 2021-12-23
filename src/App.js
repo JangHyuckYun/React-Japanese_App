@@ -18,7 +18,7 @@ const App = () => {
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             <Header />
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path="/" element={<Main />}></Route>
                 </Routes>
