@@ -18,6 +18,7 @@ const fonts = {
         title: `'Merriweather', serif`,
     },
     size: {
+        min:"1.0rem",
         sm: "1.4rem",
         base: "1.6rem",
         lg: "2rem",

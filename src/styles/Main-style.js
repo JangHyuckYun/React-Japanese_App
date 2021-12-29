@@ -1,19 +1,20 @@
 import styled, { css } from "styled-components";
+import Content from "./Content";
 
-const MainStyle = styled.div`
+const MainStyle = styled(Content)`
     ${({ theme }) => {
     return css`
-            max-width: 800px;
-            height: 100%;
-            position:relative;
-            left:50%;
-            transform:translateX(-50%);
-            padding: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: ${theme.colors.secondary};
-        `;
+        
+        .title {
+            text-align:left;
+            padding-bottom:50px;
+            
+            h1 {
+                font-weight:bold;
+            }
+            
+        }
+    `;
 }}
 `;
 
