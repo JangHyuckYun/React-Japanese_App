@@ -8,7 +8,6 @@ const MainStyle = styled(Content)`
         .title {
             text-align:left;
             padding-bottom:50px;
-            
             h1 {
                 font-weight:bold;
             }

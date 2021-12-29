@@ -4,8 +4,13 @@ const Button = styled.div`
     ${({ theme }) => {
     return css`
             padding:5px 25px;
-            margin:10px 0;
+            margin-bottom:15px;
             border:none;
+            cursor:pointer;
+            
+            &:hover {
+                
+            }
         `;
 }}
 `;
@@ -56,14 +61,14 @@ const MainMenuButton = styled(ButtonStyle1)`
             color: ${theme.colors.secondary};
             display:flex;
             align-items:center;
-            
             h3 {
                 font-weight:bold;
-                padding-bottom:5px;
+                padding-bottom:10px;
             }
             
             p {
                 font-size: ${theme.fonts.size.min};
+                opacity:.55;
             }
             
         `;
