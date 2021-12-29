@@ -5,6 +5,8 @@ import { darkTheme, lightTheme } from "./styles/theme";
 import GlobalStyle from "./styles/GlobalStyle";
 import Main from "./Main";
 import Header from "./Header";
+import Settings from "./util/Settings";
+import Menus from "./Menus";
 
 const App = () => {
     const [theme, setTheme] = useState(lightTheme);
@@ -20,7 +22,9 @@ const App = () => {
             <Header />
             <Router basename={process.env.PUBLIC_URL}>
                 <Routes>
-                    <Route path="/" element={<Main />}></Route>
+                    <Route path="/" element={<Main/>} />
+                    <Route path="/menu/:type" element={<Menus/>} />
+                    <Route path="/settings" element={<Settings switchTheme={() => switchTheme} />}  />
                 </Routes>
             </Router>
         </ThemeProvider>

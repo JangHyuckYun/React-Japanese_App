@@ -1,9 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, {css} from "styled-components";
 
 const Button = styled.div`
-    ${({ theme }) => {
+    ${({theme}) => {
     return css`
-            padding:5px 25px;
             margin-bottom:15px;
             border:none;
             cursor:pointer;
@@ -16,7 +15,7 @@ const Button = styled.div`
 `;
 
 const ButtonStyle1 = styled(Button)`
-    ${({ theme }) => {
+    ${({theme}) => {
     return css`
             border-radius: 20px;
         `;
@@ -24,7 +23,7 @@ const ButtonStyle1 = styled(Button)`
 `;
 
 const SmallButton = styled(ButtonStyle1)`
-    ${({ theme }) => {
+    ${({theme}) => {
     return css`
             background-color: ${theme.buttons.colors.green};
             color: ${theme.colors.secondary};
@@ -34,7 +33,7 @@ const SmallButton = styled(ButtonStyle1)`
 `;
 
 const NormalButton = styled(ButtonStyle1)`
-    ${({ theme }) => {
+    ${({theme}) => {
     return css`
             background-color: ${theme.colors.primary};
             color: ${theme.colors.secondary};
@@ -44,7 +43,7 @@ const NormalButton = styled(ButtonStyle1)`
 `;
 
 const BigButton = styled(ButtonStyle1)`
-    ${({ theme }) => {
+    ${({theme}) => {
     return css`
             background-color: ${theme.colors.primary};
             color: ${theme.colors.secondary};
@@ -52,15 +51,20 @@ const BigButton = styled(ButtonStyle1)`
         `;
 }}
 `;
-
 const MainMenuButton = styled(ButtonStyle1)`
-    ${({ theme, backgroundColor }) => {
+    ${({theme, backgroundColor, backgroundImageUrl}) => {
     return css`
             height:100px;
+            position:relative;
             background-color: ${backgroundColor};
-            color: ${theme.colors.secondary};
-            display:flex;
-            align-items:center;
+            & > *{
+                color: ${theme.colors.secondary};
+            }
+            
+            h3, p {
+                z-index:1;
+            }
+            
             h3 {
                 font-weight:bold;
                 padding-bottom:10px;
@@ -70,11 +74,38 @@ const MainMenuButton = styled(ButtonStyle1)`
                 font-size: ${theme.fonts.size.min};
                 opacity:.55;
             }
+            a {
+                position:relative;
+                display:block;
+                width:100%;
+                height:100%;
+                padding:5px 25px;
+                z-index:1;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:flex-start;
+            }
+            
+            &:before {
+                content:"";
+                width:130px;
+                height:100%;
+                filter: grayscale(1);
+                opacity: .5;
+                background-image: url(${backgroundImageUrl});
+                background-size: cover;
+                background-repeat: no-repeat;
+                position:absolute;
+                right:0;
+                top:0;
+                z-index:0;
+            }
             
         `;
 }}
 `;
 
-const styledButtonComponents = { SmallButton, NormalButton, BigButton, MainMenuButton };
+const styledButtonComponents = {SmallButton, NormalButton, BigButton, MainMenuButton};
 
 export default styledButtonComponents;
