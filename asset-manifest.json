@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/React-Japanese_App/static/css/main.9616640d.chunk.css",
-    "main.js": "/React-Japanese_App/static/js/main.19531b9f.chunk.js",
-    "main.js.map": "/React-Japanese_App/static/js/main.19531b9f.chunk.js.map",
+    "main.js": "/React-Japanese_App/static/js/main.d19ceee2.chunk.js",
+    "main.js.map": "/React-Japanese_App/static/js/main.d19ceee2.chunk.js.map",
     "runtime-main.js": "/React-Japanese_App/static/js/runtime-main.e53dabc0.js",
     "runtime-main.js.map": "/React-Japanese_App/static/js/runtime-main.e53dabc0.js.map",
-    "static/js/2.b0d98163.chunk.js": "/React-Japanese_App/static/js/2.b0d98163.chunk.js",
-    "static/js/2.b0d98163.chunk.js.map": "/React-Japanese_App/static/js/2.b0d98163.chunk.js.map",
+    "static/js/2.e0d4d2d0.chunk.js": "/React-Japanese_App/static/js/2.e0d4d2d0.chunk.js",
+    "static/js/2.e0d4d2d0.chunk.js.map": "/React-Japanese_App/static/js/2.e0d4d2d0.chunk.js.map",
     "index.html": "/React-Japanese_App/index.html",
     "static/css/main.9616640d.chunk.css.map": "/React-Japanese_App/static/css/main.9616640d.chunk.css.map",
-    "static/js/2.b0d98163.chunk.js.LICENSE.txt": "/React-Japanese_App/static/js/2.b0d98163.chunk.js.LICENSE.txt"
+    "static/js/2.e0d4d2d0.chunk.js.LICENSE.txt": "/React-Japanese_App/static/js/2.e0d4d2d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e53dabc0.js",
-    "static/js/2.b0d98163.chunk.js",
+    "static/js/2.e0d4d2d0.chunk.js",
     "static/css/main.9616640d.chunk.css",
-    "static/js/main.19531b9f.chunk.js"
+    "static/js/main.d19ceee2.chunk.js"
   ]
 }
