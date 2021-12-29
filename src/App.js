@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./styles/theme";
@@ -7,6 +7,7 @@ import Main from "./Main";
 import Header from "./Header";
 import Settings from "./util/Settings";
 import Menus from "./Menus";
+import data from "./json/data.js";
 
 const App = () => {
     const [theme, setTheme] = useState(lightTheme);
@@ -15,7 +16,7 @@ const App = () => {
         const nextTheme = theme === lightTheme ? darkTheme : lightTheme;
         setTheme(nextTheme);
     }
-    console.log(process.env.PUBLIC_URL)
+
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyle />
@@ -23,7 +24,7 @@ const App = () => {
             <Router basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path="/" element={<Main/>} />
-                    <Route path="/menu/:type" element={<Menus/>} />
+                    <Route path="/menu/:type" element={<Menus allData={data.data.language.jp} />} />
                     <Route path="/settings" element={<Settings switchTheme={() => switchTheme} />}  />
                 </Routes>
             </Router>

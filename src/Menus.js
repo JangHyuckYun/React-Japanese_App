@@ -1,12 +1,15 @@
 import React, {useState} from "react";
 import styledMainComponents from "./styles/MenusStyle-style";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
-const { MenusStyle } = styledMainComponents;
-
+const {MenusStyle} = styledMainComponents;
+// eslint-disable-next-line react-hooks/rules-of-hooks
 const Menus = (props) => {
-    // const { params } = props.match;
+    const {type} = useParams();
+    const { allData } = props;
 
+    let data = allData[type];
+    console.log(data);
     return (
         <MenusStyle>
             <p>test...</p>

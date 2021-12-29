@@ -13,17 +13,17 @@ const Main = () => {
     return (
         <MainStyle>
             <div className="title">
-                <h1>Japanese App</h1>
+                <h1>Learn</h1>
             </div>
             <div className="menus">
                 <MainMenuButton backgroundColor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/word">
+                    <Link to="/menu/words">
                         <h3>Words</h3>
                         <p>this is test lines...</p>
                     </Link>
                 </MainMenuButton>
                 <MainMenuButton backgroundColor="#8DC4BB" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/grammer">
+                    <Link to="/menu/grammars">
                         <h3>Grammers</h3>
                         <p>this is test lines...</p>
                     </Link>
