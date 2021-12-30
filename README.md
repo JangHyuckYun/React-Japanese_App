@@ -2,7 +2,7 @@
 
 ------------
 
-Link : `https://by09019.github.io/React-Japanese_App/` 
+Link : https://by09019.github.io/React-Japanese_App/
 
 ## 프로젝트 계획이유
 
