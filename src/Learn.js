@@ -4,7 +4,7 @@ import {Link, useParams} from "react-router-dom";
 
 const {MenusStyle} = styledMainComponents;
 // eslint-disable-next-line react-hooks/rules-of-hooks
-const Menus = (props) => {
+const Learn = (props) => {
     const {type} = useParams();
     const { allData } = props;
 
@@ -17,4 +17,4 @@ const Menus = (props) => {
     );
 };
 
-export default Menus;
+export default Learn;

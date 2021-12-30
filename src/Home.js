@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import styledButtonComponents from "./styles/Buttons-style";
-import styledMainComponents from "./styles/Main-style";
+import styledLearnsComponents from "./styles/Learns-style";
 import menuCherryBlossom from "./images/menu-cherryblossom.png";
 import menuPheasant from "./images/menu-pheasant.png";
 import menuCat from "./images/menu-cat.png";
 import {Link} from "react-router-dom";
 
 const {MainMenuButton} = styledButtonComponents;
-const {MainStyle} = styledMainComponents;
+const {LearnsStyle} = styledLearnsComponents;
 
-const Main = () => {
+const Home = () => {
     return (
-        <MainStyle>
+        <LearnsStyle>
             <div className="title">
                 <h1>Learn</h1>
             </div>
@@ -41,8 +41,8 @@ const Main = () => {
                     </Link>
                 </MainMenuButton>
             </div>
-        </MainStyle>
+        </LearnsStyle>
     );
 };
 
-export default Main;
+export default Home;

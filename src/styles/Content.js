@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import Container from "./Container";
 //이제는 어떻게 사랑을 하나요
-const Content = styled(Container)`
+const Content = styled.div`
     ${({ theme }) => {
     return css`
             padding: 15px;

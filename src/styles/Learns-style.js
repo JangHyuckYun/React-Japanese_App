@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import Content from "./Content";
 
-const MainStyle = styled(Content)`
+const LearnsStyle = styled(Content)`
     ${({ theme }) => {
     return css`
         
@@ -17,6 +17,6 @@ const MainStyle = styled(Content)`
 }}
 `;
 
-const styledMainComponents = { MainStyle };
+const styledLearnsComponents = { LearnsStyle };
 
-export default styledMainComponents;
+export default styledLearnsComponents;
