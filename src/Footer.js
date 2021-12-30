@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer>
             <p>Footer</p>
-            <Link to="/settings">Click Here</Link>
+
         </footer>
     );
 }

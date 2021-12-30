@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <LearnsStyle>
             <div className="title">
-                <h1>Learn</h1>
+                <h1>Home</h1>
             </div>
             <div className="menus">
                 <MainMenuButton backgroundColor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
