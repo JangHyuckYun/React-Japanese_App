@@ -19,12 +19,6 @@ const App = () => {
         const nextTheme = theme === lightTheme ? darkTheme : lightTheme;
         setTheme(nextTheme);
     }
-    const {href} = window.location;
-    const checkUrl = process.env.PUBLIC_URL.split("/")[1];
-    if ((href.split("/")[href.split("/").length - 1] === "" && href.split("/")[href.split("/").length - 2] === checkUrl) || href.split("/")[href.split("/").length - 1] === checkUrl) {
-        window.location.href = href + (href.split("/")[href.split("/").length - 1] === "" ? "" : "/") + "home";
-    }
-    console.log(href, href.split("/"), process.env.PUBLIC_URL.split("/")[1]);
 
     return (
         <ThemeProvider theme={theme}>
@@ -34,7 +28,7 @@ const App = () => {
                     <Container>
                         <Header/>
                         <Routes>
-                            <Route path={"/home"} element={<Home/>}/>
+                            <Route path={"/"} element={<Home/>}/>
                             <Route path="/learn" element={<Learns/>}/>
                             <Route path="/learn/:type" element={<Learn allData={data.data.language.jp}/>}/>
                             <Route path="/settings" element={<Settings switchTheme={() => switchTheme}/>}/>
