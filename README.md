@@ -14,4 +14,6 @@ Link : https://by09019.github.io/React-Japanese_App/
 > ...
 
 ## 수정이력
-> **2021-12-30** / Single Page로 제작중 reload시 404에러 관련 오류 수정. <br />(참고 자료:https://github.com/rafgraph/spa-github-pages) <br />
+> **2021-12-30**
+> - Single Page로 제작중 reload시 404에러 관련 오류 수정. <br />(참고 자료:https://github.com/rafgraph/spa-github-pages) <br />
+> - Footer Design 추가

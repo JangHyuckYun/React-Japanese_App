@@ -3,8 +3,7 @@ import Content from "./Content";
 
 const LearnsStyle = styled(Content)`
     ${({ theme }) => {
-    return css`
-        
+    return css`   
         .title {
             text-align:left;
             padding-bottom:50px;

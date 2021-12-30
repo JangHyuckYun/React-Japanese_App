@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
           font-size: ${theme.fonts.size.base};
           font-family: 'OpenSansRegular', sans-serif;
           letter-spacing:.15px;
+          padding:0 15px;
+          position:relative;
         }
         
         h1,h3 {
