@@ -1,45 +1,30 @@
 import React, {useState} from "react";
 import styledButtonComponents from "./styles/Buttons-style";
 import styledLearnsComponents from "./styles/Learns-style";
-import menuCherryBlossom from "./images/menu-cherryblossom.png";
-import menuPheasant from "./images/menu-pheasant.png";
-import menuCat from "./images/menu-cat.png";
 import {Link} from "react-router-dom";
+import info from "./json/info";
 
 const {MainMenuButton} = styledButtonComponents;
 const {LearnsStyle} = styledLearnsComponents;
 
 const Learns = () => {
+    const learns = info.learns;
     return (
         <LearnsStyle>
             <div className="title">
                 <h1>Learn</h1>
             </div>
             <div className="menus">
-                <MainMenuButton backgroundcolor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/learn/words">
-                        <h3>Words</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundcolor="#8DC4BB" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/learn/grammars">
-                        <h3>Grammers</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundcolor="#F2982F" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/learn/eju">
-                        <h3>EJU</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundcolor="#327389" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/settings">
-                        <h3>Settings</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
+                {Object.keys(learns).map((key) => {
+                    return (
+                        <MainMenuButton key={key} backgroundcolor={learns[key].background} backgroundImageUrl={learns[key].backgroundImageUrl}>
+                            <Link to={"/"+(key === "settings" ? key : "learn/"+key)}>
+                                <h3>{learns[key].name}</h3>
+                                <p>{learns[key].text}</p>
+                            </Link>
+                        </MainMenuButton>
+                    );
+                })}
             </div>
         </LearnsStyle>
     );
