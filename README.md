@@ -20,5 +20,6 @@ Link : https://janghyuckyun.github.io/React-Japanese_App/
 > 
 > **2022-01-03**
 > - Home Design 추가
-> - Learn Design 추가
 > - Level 선택 페이지 추가
+> - Info Json 추가
+> - Learn 하드코딩 되어있는 부분 반복문으로 교체
