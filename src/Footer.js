@@ -8,19 +8,19 @@ const {FooterStyle, FooterMenu} = styledFooterComponents;
 
 const Footer = () => {
     const { menus, updateMenu } = useContext(InfoContext);
-    console.log(menus);
+    console.log("menus",menus);
     return (
         <FooterStyle>
-            <FooterMenu to="/" backgroundColor="#6a8ff1" className="active">
+            <FooterMenu to="/" backgroundcolor="#6a8ff1" className="active">
                 <FontAwesomeIcon icon={faHome} />
             </FooterMenu>
-            <FooterMenu to="/learn" backgroundColor="#eb7662">
+            <FooterMenu to="/learn" backgroundcolor="#eb7662">
                 <FontAwesomeIcon icon={faBook} />
             </FooterMenu>
-            <FooterMenu to="/settings" backgroundColor="#8dc4bb">
+            <FooterMenu to="/settings" backgroundcolor="#8dc4bb">
                 <FontAwesomeIcon icon={faAtlas} />
             </FooterMenu>
-            <FooterMenu to="/settings" backgroundColor="#8dc4bb">
+            <FooterMenu to="/settings" backgroundcolor="#8dc4bb">
                 <FontAwesomeIcon icon={faUser} />
             </FooterMenu>
         </FooterStyle>
