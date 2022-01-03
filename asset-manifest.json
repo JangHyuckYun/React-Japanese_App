@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-Japanese_App/static/css/main.a1c71a92.chunk.css",
-    "main.js": "/React-Japanese_App/static/js/main.73f4d370.chunk.js",
-    "main.js.map": "/React-Japanese_App/static/js/main.73f4d370.chunk.js.map",
+    "main.js": "/React-Japanese_App/static/js/main.cde7e298.chunk.js",
+    "main.js.map": "/React-Japanese_App/static/js/main.cde7e298.chunk.js.map",
     "runtime-main.js": "/React-Japanese_App/static/js/runtime-main.e53dabc0.js",
     "runtime-main.js.map": "/React-Japanese_App/static/js/runtime-main.e53dabc0.js.map",
-    "static/js/2.6d78f1c9.chunk.js": "/React-Japanese_App/static/js/2.6d78f1c9.chunk.js",
-    "static/js/2.6d78f1c9.chunk.js.map": "/React-Japanese_App/static/js/2.6d78f1c9.chunk.js.map",
+    "static/js/2.6659537f.chunk.js": "/React-Japanese_App/static/js/2.6659537f.chunk.js",
+    "static/js/2.6659537f.chunk.js.map": "/React-Japanese_App/static/js/2.6659537f.chunk.js.map",
     "index.html": "/React-Japanese_App/index.html",
     "static/css/main.a1c71a92.chunk.css.map": "/React-Japanese_App/static/css/main.a1c71a92.chunk.css.map",
-    "static/js/2.6d78f1c9.chunk.js.LICENSE.txt": "/React-Japanese_App/static/js/2.6d78f1c9.chunk.js.LICENSE.txt",
+    "static/js/2.6659537f.chunk.js.LICENSE.txt": "/React-Japanese_App/static/js/2.6659537f.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/React-Japanese_App/static/media/OpenSans-SemiBold.d7261533.ttf",
     "static/media/menu-cat.5168b9a4.png": "/React-Japanese_App/static/media/menu-cat.5168b9a4.png",
     "static/media/menu-cherryblossom.a2ca348f.png": "/React-Japanese_App/static/media/menu-cherryblossom.a2ca348f.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e53dabc0.js",
-    "static/js/2.6d78f1c9.chunk.js",
+    "static/js/2.6659537f.chunk.js",
     "static/css/main.a1c71a92.chunk.css",
-    "static/js/main.73f4d370.chunk.js"
+    "static/js/main.cde7e298.chunk.js"
   ]
 }
