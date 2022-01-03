@@ -22,6 +22,7 @@ const FooterStyle = styled.footer`
          justify-content:center;
          align-items:stretch;
          
+         z-index:999;
          a {
             min-height:100%;
          }
