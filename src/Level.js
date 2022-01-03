@@ -1,16 +1,14 @@
 import React, {useState} from "react";
-import styledLearnComponents from "./styles/LearnStyle-style";
+import styledLevelComponents from "./styles/Level-Style";
 import {Link, useParams, useLocation, use} from "react-router-dom";
 
-const {MenusStyle, Level} = styledLearnComponents;
+const {MenusStyle, Level} = styledLevelComponents;
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const Learn = (props) => {
     const { type, level } = useParams();
     const location = useLocation();
     const { allData } = props;
-    const data = allData[type][level.toLowerCase()];
-    console.log(allData, type, level);
-    console.log("level data: ", data);
+    const data = allData[type][level];
     return (
         <MenusStyle>
            <p>test...</p>

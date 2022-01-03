@@ -3,35 +3,35 @@ export default {
         "language": {
             "jp": {
                 "words": {
-                    "n1": [
+                    "N1": [
                         {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
                     ],
-                    "n2": [
+                    "N2": [
                         {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
                     ],
-                    "n3": [
+                    "N3": [
                         {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
                     ],
-                    "n4": [
+                    "N4": [
                         {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
                     ],
-                    "n5": [
+                    "N5": [
                         {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
                         {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
@@ -46,7 +46,16 @@ export default {
                     "n4": [],
                     "n5": []
                 },
-                "eju": []
+                "eju": [],
+                "info": {
+                   "level": {
+                       "N1": { text:"" },
+                       "N2": { text:"" },
+                       "N3": { text:"" },
+                       "N4": { text:"" },
+                       "N5": { text:"" }
+                   }
+                },
             }
         }
     }
