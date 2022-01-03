@@ -24,7 +24,7 @@ const App = () => {
         <ThemeProvider theme={theme}>
             <GlobalStyle/>
             <InfoStore>
-                <Router basename={process.env.PUBLIC_URL}>
+                <Router basename={process.env.PUBLIC_URL} on>
                     <Container>
                         <Header/>
                         <Routes>
