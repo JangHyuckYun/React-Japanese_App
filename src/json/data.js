@@ -46,16 +46,7 @@ export default {
                     "n4": [],
                     "n5": []
                 },
-                "eju": [],
-                "info": {
-                   "level": {
-                       "N1": { text:"" },
-                       "N2": { text:"" },
-                       "N3": { text:"" },
-                       "N4": { text:"" },
-                       "N5": { text:"" }
-                   }
-                },
+                "eju": []
             }
         }
     }
