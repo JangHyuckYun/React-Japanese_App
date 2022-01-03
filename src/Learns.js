@@ -16,25 +16,25 @@ const Learns = () => {
                 <h1>Learn</h1>
             </div>
             <div className="menus">
-                <MainMenuButton backgroundColor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/words">
+                <MainMenuButton backgroundcolor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
+                    <Link to="/learn/words">
                         <h3>Words</h3>
                         <p>this is test lines...</p>
                     </Link>
                 </MainMenuButton>
-                <MainMenuButton backgroundColor="#8DC4BB" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/grammars">
+                <MainMenuButton backgroundcolor="#8DC4BB" backgroundImageUrl={menuCherryBlossom}>
+                    <Link to="/learn/grammars">
                         <h3>Grammers</h3>
                         <p>this is test lines...</p>
                     </Link>
                 </MainMenuButton>
-                <MainMenuButton backgroundColor="#F2982F" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/eju">
+                <MainMenuButton backgroundcolor="#F2982F" backgroundImageUrl={menuCherryBlossom}>
+                    <Link to="/learn/eju">
                         <h3>EJU</h3>
                         <p>this is test lines...</p>
                     </Link>
                 </MainMenuButton>
-                <MainMenuButton backgroundColor="#327389" backgroundImageUrl={menuCherryBlossom}>
+                <MainMenuButton backgroundcolor="#327389" backgroundImageUrl={menuCherryBlossom}>
                     <Link to="/settings">
                         <h3>Settings</h3>
                         <p>this is test lines...</p>
