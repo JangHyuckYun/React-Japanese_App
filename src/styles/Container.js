@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 const Container = styled.div`
     ${({ theme }) => {
     return css`
-            max-width: 500px;
+            max-width: 800px;
             height: 100%;
             position:relative;
             left:50%;

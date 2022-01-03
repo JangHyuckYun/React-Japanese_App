@@ -8,8 +8,6 @@ const Content = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
-            top:calc(50% - 50px);
-            transform:translateY(-50%);
         `;
 }}
 `;
