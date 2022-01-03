@@ -52,11 +52,11 @@ const BigButton = styled(ButtonStyle1)`
 }}
 `;
 const MainMenuButton = styled(ButtonStyle1)`
-    ${({theme, backgroundColor, backgroundImageUrl}) => {
+    ${({theme, backgroundcolor, backgroundImageUrl}) => {
     return css`
             height:100px;
             position:relative;
-            background-color: ${backgroundColor};
+            background-color: ${backgroundcolor};
             & > *{
                 color: ${theme.colors.secondary};
             }

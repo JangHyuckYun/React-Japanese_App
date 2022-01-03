@@ -4,7 +4,7 @@ import Container from "./Container";
 const Content = styled.div`
     ${({ theme }) => {
     return css`
-            padding: 15px;
+            position:relative;
             display: flex;
             flex-direction: column;
             justify-content: center;

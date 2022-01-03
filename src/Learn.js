@@ -1,18 +1,21 @@
 import React, {useState} from "react";
-import styledMainComponents from "./styles/MenusStyle-style";
-import {Link, useParams} from "react-router-dom";
+import styledLearnComponents from "./styles/Learn-Style";
+import {Link, useParams, useLocation} from "react-router-dom";
 
-const {MenusStyle} = styledMainComponents;
-// eslint-disable-next-line react-hooks/rules-of-hooks
+const {MenusStyle, LevelItem} = styledLearnComponents;
 const Learn = (props) => {
     const {type} = useParams();
-    const { allData } = props;
+    const {pathname} = useLocation();
+    const {allData} = props;
+    const data = allData[type];
+    const levelInfo = allData.info.level;
 
-    let data = allData[type];
-    console.log(data);
     return (
         <MenusStyle>
-            <p>test...</p>
+            {Object.keys(data).slice().map((key, idx) =>
+                <LevelItem key={idx} to={pathname + "/" + key}>
+                    {key}
+                </LevelItem>)}
         </MenusStyle>
     );
 };

@@ -2,7 +2,7 @@
 
 ------------
 
-Link : https://by09019.github.io/React-Japanese_App/
+Link : https://janghyuckyun.github.io/React-Japanese_App/
 
 ## 프로젝트 계획이유
 
@@ -12,3 +12,13 @@ Link : https://by09019.github.io/React-Japanese_App/
 > 크게 단어(Words), 문법(Grammers), EJU(Examination for Japanese University) 이 3개로 나뉘어 집니다.
 > 
 > ...
+
+## 수정이력
+> **2021-12-30**
+> - Single Page로 제작중 reload시 404에러 관련 오류 수정. <br />(참고 자료:https://github.com/rafgraph/spa-github-pages) <br />
+> - Footer Design 추가 <br />
+> 
+> **2022-01-03**
+> - Home Design 추가
+> - Learn Design 추가
+> - Level 선택 페이지 추가
