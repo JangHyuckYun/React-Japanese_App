@@ -27,14 +27,14 @@ const MainStyle = styled(Content)`
 `;
 
 const MainInfo = styled(Content)`
-    ${({theme, height, backgroundColor, gridRow}) => {
+    ${({theme, height, backgroundcolor, gridRow}) => {
     return css`
         width:100%;
         min-height:${height};
         height: auto;
                 
         border-radius:25px;
-        background:${backgroundColor};
+        background:${backgroundcolor};
         ${gridRow ? "grid-row:"+gridRow+";" : ""}
         
         color:rgba(255,255,255, .7);

@@ -31,13 +31,13 @@ const FooterStyle = styled.footer`
 `;
 
 const FooterMenu = styled(Link)`
-    ${({theme, backgroundColor}) => {
+    ${({theme, backgroundcolor}) => {
     return css`
          position:relative;
          flex:1;
          margin:0 10px;
          border-radius:15px;
-         background:${backgroundColor};
+         background:${backgroundcolor};
          
          display:flex;
          align-items:center;
