@@ -1,47 +1,38 @@
 import React, {useState} from "react";
 import styledButtonComponents from "./styles/Buttons-style";
-import styledLearnsComponents from "./styles/Learns-style";
+import styledMainsComponents from "./styles/Main-Style";
 import menuCherryBlossom from "./images/menu-cherryblossom.png";
 import menuPheasant from "./images/menu-pheasant.png";
 import menuCat from "./images/menu-cat.png";
 import {Link} from "react-router-dom";
 
 const {MainMenuButton} = styledButtonComponents;
-const {LearnsStyle} = styledLearnsComponents;
+const {MainStyle, MainInfo} = styledMainsComponents;
 
 const Home = () => {
     return (
-        <LearnsStyle>
+        <MainStyle>
             <div className="title">
                 <h1>Home</h1>
             </div>
-            <div className="menus">
-                <MainMenuButton backgroundColor="#EB7662" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/words">
-                        <h3>Words</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundColor="#8DC4BB" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/grammars">
-                        <h3>Grammers</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundColor="#F2982F" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/menu/eju">
-                        <h3>EJU</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
-                <MainMenuButton backgroundColor="#327389" backgroundImageUrl={menuCherryBlossom}>
-                    <Link to="/settings">
-                        <h3>Settings</h3>
-                        <p>this is test lines...</p>
-                    </Link>
-                </MainMenuButton>
+            <div className="info-cover">
+                <MainInfo height="100px" backgroundColor="#8DC4BB" gridRow="1 / 3">
+                    <p>test1</p>
+                </MainInfo>
+                <MainInfo height="150px" backgroundColor="#EB7662">
+                    <p>test2</p>
+                </MainInfo>
+                <MainInfo height="300px" backgroundColor="#6A8FF1">
+                    <p>test3</p>
+                </MainInfo>
+                <MainInfo height="200px" backgroundColor="#EB7662">
+                    <p>test4</p>
+                </MainInfo>
+                <MainInfo height="200px" backgroundColor="#8DC4BB">
+                    <p>test5</p>
+                </MainInfo>
             </div>
-        </LearnsStyle>
+        </MainStyle>
     );
 };
 
