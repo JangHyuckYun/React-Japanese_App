@@ -10,7 +10,7 @@ const Learn = (props) => {
     const {allData} = props;
     const data = allData[type];
     const levelInfo = info.level;
-
+    console.log(levelInfo)
     return (
         <MenusStyle>
             {Object.keys(data).slice().map((key, idx) =>
