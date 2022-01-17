@@ -7,8 +7,9 @@ const MenusStyle = styled(Container)`
     return css`
         display:grid;
         grid-template-columns: repeat(2, calc(100% / 2));
-        grid-auto-rows: 100px;
+        grid-auto-rows: 150px;
         justify-content:center;
+        align-content:center;
         gap:10px;
         text-align:center;
         padding-top:10px;
@@ -20,10 +21,13 @@ const LevelItem = styled(Link)`
     ${({ theme }) => {
     return css`
         display:block;
+        line-height:135px;
         border-radius:15px;
         background:#6a8ff1;
         color:#fff;
         padding:10px;
+        font-weight:bold;
+        letter-spacing:1px;
     `;
 }}
 `;

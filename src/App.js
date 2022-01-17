@@ -13,6 +13,7 @@ import Container from "./styles/Container";
 import InfoStore from "./contexts/info";
 import data from "./json/data.js";
 import Level from "./Level";
+import ReactGA from 'react-ga';
 
 const App = () => {
     const [theme, setTheme] = useState(lightTheme);

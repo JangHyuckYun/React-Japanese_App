@@ -16,7 +16,8 @@ const Learn = (props) => {
             {Object.keys(data).slice().map((key, idx) =>
                 <LevelItem key={idx} to={pathname + "/" + key}>
                     {key}
-                </LevelItem>)}
+                </LevelItem>)
+            }
         </MenusStyle>
     );
 };
