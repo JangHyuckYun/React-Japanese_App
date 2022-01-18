@@ -1,5 +1,7 @@
 import React, {createContext, useState} from "react";
+import { data } from "../json/data.json";
 const defaultValue = {
+    data,
     menus: {
         home: {active:true},
         menu1: {active:false},
@@ -21,6 +23,10 @@ const defaultValue = {
             n4: {},
             n5: {},
         }, // 공부 진행 상황 저장
+        language: {
+            app: "ko",
+            study: "jp"
+        }
     },
 
     updateMenu: () => {},
@@ -30,9 +36,8 @@ const defaultValue = {
 export const InfoContext = createContext(defaultValue);
 
 const InfoStore = (props) => {
-
-    const [menusInfo, profileInfo] = Object.values(defaultValue);
-
+    const [dataInfo, menusInfo, profileInfo] = Object.values(defaultValue);
+    const [data, setData] = useState(dataInfo);
     let [menus, setMenus] = useState(menusInfo);
     const [profile, setProfile] = useState(profileInfo);
 
@@ -54,7 +59,7 @@ const InfoStore = (props) => {
     };
 
     return(
-        <InfoContext.Provider value={{menus, profile, updateMenu, updateProfile}}>
+        <InfoContext.Provider value={{data, menus, profile, updateMenu, updateProfile}}>
             {props.children}
         </InfoContext.Provider>
     );
