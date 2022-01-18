@@ -1,24 +1,30 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import styledLearnComponents from "./styles/Learn-Style";
+import Content from "./styles/Content";
 import {Link, useParams, useLocation} from "react-router-dom";
 import info from "./json/info";
+import {InfoContext} from "./contexts/info";
 
 const {MenusStyle, LevelItem} = styledLearnComponents;
 const Learn = (props) => {
     const {type} = useParams();
     const {pathname} = useLocation();
-    const {allData} = props;
-    const data = allData[type];
-    const levelInfo = info.level;
-    console.log(levelInfo)
+    const { profile, data:{ language },  } = useContext(InfoContext);
+    const studyData = language[profile.language.study][type];
+
     return (
-        <MenusStyle>
-            {Object.keys(data).slice().map((key, idx) =>
-                <LevelItem key={idx} to={pathname + "/" + key}>
-                    {key}
-                </LevelItem>)
-            }
-        </MenusStyle>
+        <Content>
+            <div className="title">
+                <h1>Choose Level</h1>
+            </div>
+            <MenusStyle>
+                {Object.keys(studyData).slice().map((key, idx) =>
+                    <LevelItem key={idx} to={pathname + "/" + key}>
+                        {key}
+                    </LevelItem>)
+                }
+            </MenusStyle>
+        </Content>
     );
 };
 

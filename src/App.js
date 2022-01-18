@@ -21,6 +21,17 @@ const App = () => {
         const nextTheme = theme === lightTheme ? darkTheme : lightTheme;
         setTheme(nextTheme);
     }
+    const handleResize = () => {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+    }
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => { window.addEventListener("resize", handleResize); };
+    },[]);
 
     return (
         <ThemeProvider theme={theme}>

@@ -6,9 +6,9 @@ const {MenusStyle, Level} = styledLevelComponents;
 // eslint-disable-next-line react-hooks/rules-of-hooks
 const Learn = (props) => {
     const { type, level } = useParams();
-    const location = useLocation();
     const { allData } = props;
     const data = allData[type][level];
+    console.log(props);
     return (
         <MenusStyle>
            <p>test...</p>

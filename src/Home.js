@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             <div className="info-cover">
                 <MainInfo height="100px" backgroundcolor="#8DC4BB" gridRow="1 / 3">
-                    <p>test1</p>
+                    <p>test111</p>
                 </MainInfo>
                 <MainInfo height="150px" backgroundcolor="#EB7662">
                     <p>test2</p>
