@@ -1,8 +1,9 @@
 import styled, { css } from "styled-components";
 import Container from "./Container";
 import {Link} from "react-router-dom";
+import Content from "./Content";
 
-const MenusStyle = styled(Container)`
+const MenusStyle = styled(Content)`
     ${({ theme }) => {
     return css`
     `;
