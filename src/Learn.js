@@ -9,7 +9,7 @@ const {MenusStyle, LevelItem} = styledLearnComponents;
 const Learn = (props) => {
     const {type} = useParams();
     const {pathname} = useLocation();
-    const { profile, data:{ language },  } = useContext(InfoContext);
+    const { profile, data:{ language }  } = useContext(InfoContext);
     const studyData = language[profile.language.study][type];
 
     return (
