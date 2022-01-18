@@ -23,3 +23,8 @@ Link : https://janghyuckyun.github.io/React-Japanese_App/
 > - Level 선택 페이지 추가
 > - Info Json 추가
 > - Learn 하드코딩 되어있는 부분 반복문으로 교체
+>
+> **2022-01-18**
+> - InfoStore 에서 json 파일 관리하도록 설정
+> - Component 수정
+> - Style 수정
