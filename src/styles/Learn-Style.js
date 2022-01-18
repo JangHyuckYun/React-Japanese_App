@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import Container from "./Container";
 import {Link} from "react-router-dom";
 
-const MenusStyle = styled(Container)`
+const MenusStyle = styled.div`
     ${({ theme }) => {
     return css`
         display:grid;

@@ -8,7 +8,7 @@ const FooterStyle = styled.footer`
          max-width: 800px;
          width:100%;
          min-height: 100px;
-         position:fixed;
+         position:relative;
          left:50%;
          bottom:15px;
          transform:translateX(-50%);

@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     
     ${({ theme }) => {
     return css`
+        html,body { 
+            width:100%; height:100%;
+        }
+    
         body {
           font-weight: ${theme.fonts.weight.normal};
           font-size: ${theme.fonts.size.base};

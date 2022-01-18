@@ -4,11 +4,12 @@ import Container from "./Container";
 const Content = styled.div`
     ${({ theme }) => {
     return css`
-            position:relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        `;
+        width:100%;
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    `;
 }}
 `;
 

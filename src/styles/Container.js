@@ -5,9 +5,13 @@ const Container = styled.div`
     return css`
             max-width: 800px;
             height: 100%;
+            height: calc(var(--vh, 1%) * 100);
             position:relative;
             left:50%;
             transform:translateX(-50%);
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
         `;
 }}
 `;
