@@ -3,40 +3,56 @@
     "language": {
       "jp": {
         "words": {
-          "N1": [
-            {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 1, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
-          ],
-          "N2": [
-            {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
-          ],
-          "N3": [
-            {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
+          "N5": [
+            [
+              {"idx":1, "level": 1, "name": "であう", "chinaChar": "会", "mean": ["만나다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ", "エ"], "type": ""},
+              {"idx":2, "level": 1, "name": "あおい", "chinaChar": "青い]", "mean": ["파랗다", "푸르다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":3, "level": 1, "name": "あかい", "chinaChar": "赤い", "mean": ["붉다", "빨갛다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":4, "level": 1, "name": "あがる", "chinaChar": "上がる", "mean": ["오르다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":5, "level": 1, "name": "あかるい", "chinaChar": "明るい", "mean": ["밝다","환하다", "명랑하다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ], [
+              {"idx":6, "level": 1, "name": "であう", "chinaChar": "会", "mean": ["만나다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ", "エ"], "type": ""},
+              {"idx":7, "level": 1, "name": "あおい", "chinaChar": "青い]", "mean": ["파랗다", "푸르다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":8, "level": 1, "name": "あかい", "chinaChar": "赤い", "mean": ["붉다", "빨갛다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":9, "level": 1, "name": "あがる", "chinaChar": "上がる", "mean": ["오르다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":10, "level": 1, "name": "あかるい", "chinaChar": "明るい", "mean": ["밝다","환하다", "명랑하다"], "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ]
           ],
           "N4": [
-            {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
+            [
+              {"idx":11, "level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":12, "level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":13, "level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":14, "level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":15, "level": 2, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ]
           ],
-          "N5": [
-            {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""},
-            {"level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "sound": "", "read": ""}
+          "N3": [
+            [
+              {"idx":16, "level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":17, "level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":18, "level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":19, "level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":20, "level": 3, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ]
+          ],
+          "N2": [
+            [
+              {"idx":21, "level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":22, "level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":23, "level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":24, "level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":25, "level": 4, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ]
+          ],
+          "N1": [
+            [
+              {"idx":26, "level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":27, "level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":28, "level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":29, "level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""},
+              {"idx":30, "level": 5, "name": "", "chinaChar": "", "mean": "", "ex": "", "hundog": ["あう"], "eumdog": ["カイ"], "type": ""}
+            ]
           ]
         },
         "grammars": {
