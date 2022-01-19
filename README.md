@@ -13,6 +13,11 @@ Link : https://janghyuckyun.github.io/React-Japanese_App/
 > 
 > ...
 
+## 알게 된 점
+> - BrowserRouter, Routes,Route Component를 활용하여 각 페이지를 이동하는 법에 대해 알게 되었습니다. <br /> (참고자료: https://velog.io/@devstone/react-router-dom-이해하고-활용하기)
+> - 
+> - Framer-Motion 패키지를 활용하여 각 태그에 애니메이션 효과를 주는법에 대해 알게 되었습니다.<br /> (참고자료: https://velog.io/@yrnana/framer-motion-react를-위한-motion-gesture-라이브러리)
+
 ## 수정이력
 > **2021-12-30**
 > - Single Page로 제작중 reload시 404에러 관련 오류 수정. <br />(참고 자료:https://github.com/rafgraph/spa-github-pages) <br />
