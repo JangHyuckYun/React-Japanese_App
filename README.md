@@ -28,3 +28,9 @@ Link : https://janghyuckyun.github.io/React-Japanese_App/
 > - InfoStore 에서 json 파일 관리하도록 설정
 > - Component 수정
 > - Style 수정
+> 
+> **2022-01-19**
+> - Chapter 컴포넌트 추가 및 적용
+> - 클릭 시 애니메이션 효과 적용
+> - ngrok, framer-motion package 추가
+> - test customHook 추가
