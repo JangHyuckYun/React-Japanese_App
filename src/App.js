@@ -13,6 +13,7 @@ import Container from "./styles/Container";
 import InfoStore from "./contexts/info";
 import data from "./json/data.js";
 import Level from "./Level";
+import Chapter from "./Chapter";
 
 const App = () => {
     const [theme, setTheme] = useState(lightTheme);
@@ -42,8 +43,9 @@ const App = () => {
                         <Routes>
                             <Route path={"/"} element={<Home/>}/>
                             <Route path="/learn" element={<Learns/>}/>
-                            <Route path="/learn/:type" element={<Learn allData={data.data.language.jp}/>}/>
-                            <Route path="/learn/:type/:level" element={<Level allData={data.data.language.jp}/>}/>
+                            <Route path="/learn/:type" element={<Learn />}/>
+                            <Route path="/learn/:type/:level" element={<Level />}/>
+                            <Route path="/learn/:type/:level/:chapter" element={<Chapter />}/>
                             <Route path="/settings" element={<Settings switchTheme={() => switchTheme}/>}/>
                         </Routes>
                         <Footer/>
