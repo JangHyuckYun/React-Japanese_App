@@ -1,7 +1,8 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect, useRef} from "react";
 import styledLevelComponents from "./styles/Level-Style";
-import {Link, useParams, useLocation, use} from "react-router-dom";
+import {Link, useParams, useLocation} from "react-router-dom";
 import {InfoContext} from "./contexts/info";
+import useColor from "./customHooks/useColor";
 
 const {MenusStyle, LevelItem} = styledLevelComponents;
 /*
@@ -11,12 +12,59 @@ TODO
 */
 const Level = (props) => {
     const {type, level} = useParams();
-    const {data: {language}, profile: {language: {study}}} = useContext(InfoContext);
+    const {data: {language}, profile: {language: {study}} } = useContext(InfoContext);
     const data = language[study][type][level];
-    console.log(props, data);
+    const { pathname } = useLocation();
+    const { getRandomColor } = useColor();
+    const levelRef = useRef([]);
+    let testData = Array.from(Array(15));
+    let [dataClickInfo, setDataClickInfo] = useState(testData.slice().map((d, idx) => {
+        return {
+          isClick:false,
+        };
+    }));
+
+    const clickLevel = ($event) => {
+        const { dataset: { idx } } = $event.target;
+        let modifyDataClickInfo = dataClickInfo.map((d, dIdx) => {
+
+            return {
+                isClick:d.isClick ? false : (Number(idx) === dIdx)
+            }
+        });
+
+        setDataClickInfo(modifyDataClickInfo);
+    }
+    const levelOffsetTop = levelRef.current.slice().map(ref => {
+        return ref.offsetTop
+    });
+
     return (
         <MenusStyle>
-            {data.slice().map((d, idx) => <LevelItem key={idx} to="/">Chapter{idx + 1}</LevelItem>)}
+            {testData.slice().map((d, idx) => {
+                return <LevelItem
+                    key={idx}
+                    ref={el => (levelRef.current[idx] = el)}
+                    backgroundcolor={"#8dc4bb"}
+                    isClick={dataClickInfo[idx].isClick}
+                    data-idx={idx}
+                    onClick={($event) => clickLevel($event)}
+                    animate={dataClickInfo[idx].isClick ? "open" : "close"}
+                    variants={{
+                        open: {
+                            translateY: ["0px", `-${levelOffsetTop[idx] - 10}px`],
+                            scale: [1, 1.1]
+                        },
+                        close: {
+                            translateY: 0,
+                            scale: 1
+                        }
+                    }}
+                    transition={{
+                        duration: .5
+                    }}
+                ><span>Chapter{idx + 1}</span></LevelItem>;
+            })}
         </MenusStyle>
     );
 };
