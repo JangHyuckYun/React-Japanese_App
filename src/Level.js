@@ -3,6 +3,7 @@ import styledLevelComponents from "./styles/Level-Style";
 import {Link, useParams, useLocation} from "react-router-dom";
 import {InfoContext} from "./contexts/info";
 import useColor from "./customHooks/useColor";
+import ContentByChapter from "./ContentByChapter";
 
 const {MenusStyle, LevelItem} = styledLevelComponents;
 /*
@@ -53,17 +54,17 @@ const Level = (props) => {
                     variants={{
                         open: {
                             translateY: ["0px", `-${levelOffsetTop[idx] - 10}px`],
-                            scale: [1, 1.1]
                         },
                         close: {
                             translateY: 0,
-                            scale: 1
                         }
                     }}
                     transition={{
-                        duration: .5
+                        duration: .3
                     }}
-                ><span>Chapter{idx + 1}</span></LevelItem>;
+                ><span>Chapter{idx + 1}</span>
+                    {dataClickInfo[idx].isClick ? <ContentByChapter chapterData={data[idx] || []} /> : ""}
+                </LevelItem>;
             })}
         </MenusStyle>
     );
