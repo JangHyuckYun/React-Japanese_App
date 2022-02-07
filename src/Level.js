@@ -97,6 +97,7 @@ const Level = (props) => {
                         },
                         close:{
                             transition:{
+                                ease: "easeInOut",
                                 delay:getDuration(idx)
                             },
                             translateY: 0,
