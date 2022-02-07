@@ -12,6 +12,10 @@ const paddings = {
     xl: "3rem",
 };
 
+const borderRadius = {
+  base: "15px"
+};
+
 const fonts = {
     family: {
         base: `'Noto Sans KR', sans-serif`,
@@ -72,6 +76,7 @@ const buttons = {
 const defalutTheme = {
     margins,
     paddings,
+    borderRadius,
     fonts,
     device,
     buttons,

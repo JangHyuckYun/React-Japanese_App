@@ -9,6 +9,7 @@ const MenusStyle = styled.div`
       max-height:100%;
       overflow-y:auto;
       margin-bottom:15px;
+      border-radius: ${theme.borderRadius.base};
       
       -ms-overflow-style: none;
       scrollbar-width: none;
@@ -29,13 +30,13 @@ const LevelItem = styled(motion.div)`
         min-height:80px;
         padding:10px;
         cursor:pointer;
-        border-radius:15px;
+        border-radius: ${theme.borderRadius.base};
         background:${backgroundcolor};
         margin: 10px 0;
         transition: .3s;
         position: relative;
         
-        & * {
+        & p, span {
             color:white;
             font-weight:bold;
         }
