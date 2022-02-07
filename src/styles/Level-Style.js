@@ -21,7 +21,7 @@ const MenusStyle = styled.div`
 `;
 
 const LevelItem = styled(motion.div)`
-    ${({ theme, backgroundcolor, isClick }) => {
+    ${({ theme, backgroundcolor, isClick, zIndex }) => {
     return css`
         display:flex;
         align-items:center;
@@ -33,10 +33,14 @@ const LevelItem = styled(motion.div)`
         background:${backgroundcolor};
         margin: 10px 0;
         transition: .3s;
+        position: relative;
+        
         & * {
             color:white;
             font-weight:bold;
         }
+      
+      z-index: ${zIndex};
     `;
 }}
 `;
