@@ -35,8 +35,9 @@ const Level = (props) => {
 
     const clickLevel = ($event) => {
         const {target , target: { dataset: {idx} }} = $event;
-
-        if(target.className.includes("chapterButton")) {
+        console.log("target.className", target.className, target.tagName);
+        if(!["svg", "path"].includes(target.tagName)) {
+            if(target.className.includes("chapterButton")) {
             let modifyDataClickInfo = dataClickInfo.map((d, dIdx) => {
                 let isShow = d.isShow;
                 let isClick = d.isClick;
@@ -66,6 +67,7 @@ const Level = (props) => {
 
             containerScrollY.set(getContainerScrollTop());
             setDataClickInfo(modifyDataClickInfo);
+            }
         }
     }
     const levelOffsetTop = levelRef.current.slice().map(ref => {

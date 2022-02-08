@@ -16,19 +16,19 @@ const Home = () => {
                 <h1>Home</h1>
             </div>
             <div className="info-cover">
-                <MainInfo height="100px" backgroundcolor="#8DC4BB" gridRow="1 / 3">
+                <MainInfo height="55vh" backgroundcolor="#8DC4BB" gridRow="1 / 3">
                     <p>test111</p>
                 </MainInfo>
-                <MainInfo height="150px" backgroundcolor="#EB7662">
+                <MainInfo height="20vh" backgroundcolor="#EB7662">
                     <p>test2</p>
                 </MainInfo>
-                <MainInfo height="300px" backgroundcolor="#6A8FF1">
+                <MainInfo height="20vh" backgroundcolor="#6A8FF1">
                     <p>test3</p>
                 </MainInfo>
-                <MainInfo height="200px" backgroundcolor="#EB7662">
+                <MainInfo height="10vh" backgroundcolor="#EB7662">
                     <p>test4</p>
                 </MainInfo>
-                <MainInfo height="200px" backgroundcolor="#8DC4BB">
+                <MainInfo height="10vh" backgroundcolor="#8DC4BB">
                     <p>test5</p>
                 </MainInfo>
             </div>

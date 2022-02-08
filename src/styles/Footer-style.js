@@ -6,22 +6,20 @@ const FooterStyle = styled.footer`
   ${({theme}) => {
     return css`
       max-width: 800px;
-      width: 100%;
-      min-height: 100px;
-      position: relative;
+      width: calc((65px * 5) + (8px * 2) );
+      min-height: 85px;
+      position: fixed;
       left: 50%;
-      bottom: 15px;
+      bottom: 5px;
       transform: translateX(-50%);
       border-radius: 20px;
       background: white;
       box-shadow: 0 0 10px 10px rgba(0, 0, 0, .05);
-      padding: 15px 5px;
 
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: stretch;
-
+      align-items: center;
       z-index: 999;
 
       a {
@@ -33,10 +31,13 @@ const FooterStyle = styled.footer`
 
 const FooterMenu = styled(Link)`
   ${({theme, backgroundcolor}) => {
+    console.log("FooterStyle", FooterStyle);
     return css`
       position: relative;
-      flex: 1;
-      margin: 0 10px;
+      bottom: 1px;
+      width: 65px;
+      height: 65px;
+      margin: 0 8px;
       border-radius: ${theme.borderRadius.base};
       background: ${backgroundcolor};
 
@@ -45,11 +46,7 @@ const FooterMenu = styled(Link)`
       justify-content: center;
       color: #fff;
 
-      font-size:${theme.fonts.size.lg};
-      
-      &.active {
-        //background: red;
-      }
+      font-size:${theme.fonts.size.base};
     `;
   }}
 `;

@@ -48,8 +48,8 @@ const App = () => {
                             <Route path="/learn/:type/:level/:chapter" element={<Chapter />}/>
                             <Route path="/settings" element={<Settings switchTheme={() => switchTheme}/>}/>
                         </Routes>
-                        <Footer/>
                     </Container>
+                    <Footer/>
                 </Router>
             </InfoStore>
         </ThemeProvider>

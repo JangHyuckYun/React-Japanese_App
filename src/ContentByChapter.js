@@ -11,13 +11,20 @@ const {MenusStyle, LevelItem} = styledLevelComponents;
 
 const ContentByChapter = ({chapterData, duration, testHeight, isShow, isAnimation}) => {
     const [slideIndex, setSlideIndex] = useState(0);
+    const [rotateInfo, setRotateInfo] = useState(Array.from(Array(chapterData.length)).map((d, idx) => { return { isRotate:false } }));
+
     const prevSlide = () => {
-        console.log("prev");
         setSlideIndex(slideIndex <= 0 ? 0 : (slideIndex - 1));
-    }
+    };
+
     const nextSlide = () => {
-        console.log("next");
         setSlideIndex(slideIndex >= chapterData.length - 1 ? chapterData.length - 1 : (slideIndex + 1));
+    };
+
+    const rotateCard = (idx) => {
+        rotateInfo[idx].isRotate = !rotateInfo[idx].isRotate;
+
+        setRotateInfo(rotateInfo.slice());
     }
 
     return (
@@ -27,18 +34,26 @@ const ContentByChapter = ({chapterData, duration, testHeight, isShow, isAnimatio
             isShow={isShow}
             isAnimation={isAnimation}
         >
-            <button className={"prevButton"} onClick={() => prevSlide()}><FontAwesomeIcon icon={faChevronLeft} /></button>
-            <button className={"nextButton"} onClick={() => nextSlide()}><FontAwesomeIcon icon={faChevronRight} /></button>
+            {/*<button className={"prevButton"} onClick={() => prevSlide()}><FontAwesomeIcon icon={faChevronLeft} /></button>*/}
+            {/*<button className={"nextButton"} onClick={() => nextSlide()}><FontAwesomeIcon icon={faChevronRight} /></button>*/}
             <Slider
                 onSlideComplete={(i) => console.log('finished dragging, current slide is', i)}
                 onSlideStart={(i) => console.log('started dragging on slide is', i)}
                 activeIndex={slideIndex}
                 threshHold={100}
-                transition={0.5}
+                transition={0.4}
                 scaleOnDrag={true}
             >
                 {chapterData.map((data, idx) => (
-                    <div className={"slideCard"} key={data.idx}>{data.name} | {data.mean}</div>
+                    <div className={"slideCard "+ (rotateInfo[idx].isRotate ? "card-rotate" : "")} key={data.idx} onClick={() => rotateCard(idx)}>
+                        <div className="card-cover" />
+                        <div className="card-front side-card">
+                            <p>{data.name} | {data.mean}</p>
+                        </div>
+                        <div className="card-back side-card">
+                            <p>back...</p>
+                        </div>
+                    </div>
                 ))}
             </Slider>
         </ContentByChapterStyle>

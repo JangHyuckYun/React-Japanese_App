@@ -73,13 +73,13 @@ export default styled.div`
         position: absolute;
         top:50%;
         transform: translateY(-50%);
-        
-        .prevButton {
-          left:5px;
+        z-index: 5;
+        &.prevButton {
+          left:4px;
         }
 
-        .nextButton {
-          right:5px;
+        &.nextButton {
+          right:4px;
         }
       }
       
@@ -89,10 +89,54 @@ export default styled.div`
         .SlideStyles {
           width: 93%;
           height: 85%;
-          background: #ff5a5a;
           border-radius: ${theme.borderRadius.base};
+          position: relative;
+          z-index: 1;
           .slide-inner {
-
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            perspective: 2000px;
+            
+            .slideCard {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              transform: rotateY(0deg);
+              transform-style: preserve-3d;
+              transition: .4s;
+              padding: 0;
+              
+              &.card-rotate {
+                transform: rotateY(180deg);
+              }
+              
+              .card-cover {
+                background: none;
+                visibility: hidden;
+                z-index: -99;
+              }
+              
+              .side-card {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 15px;
+                left: 0;
+                top: 0;
+                backface-visibility: hidden;
+                
+                &.card-front {
+                  z-index: 1;
+                  background: #EB7662;
+                }
+                
+                &.card-back {
+                  background: #8DC4BB;
+                  transform: rotateY(180deg);
+                }
+              }
+            }
           }
           
         }

@@ -20,7 +20,7 @@ const MainStyle = styled(Content)`
             display:grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap:10px;
-            grid-auto-rows: minmax(100px, auto);
+            grid-auto-rows: minmax(30px, auto);
         }
     `;
 }}
